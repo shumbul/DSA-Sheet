@@ -1,3 +1,37 @@
+// Bruteforce - 
+class Solution 
+{
+public:
+    vector<int> twoSum(vector<int>& nums, int target) 
+    {
+        vector<int> pairs;
+        for (int i=0;i<nums.size();i++)
+        { 
+            int num1=nums[i];
+            for (int j=i+1;j<nums.size();j++)
+            {
+                if (target-num1==nums[j])
+                {
+                    //1. push first num only if difference exists
+                    //pairs.push_back(i);
+                    //pairs.push_back(j);
+                    //2. directly return pairs
+                    return {i,j};
+                }
+            }
+        }
+        return {};
+        //TC n^2
+        //SC 1
+    }
+};
+
+//map- add values less than target and its frequency
+//map- 2,7
+    //1,1
+
+
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
