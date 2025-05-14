@@ -64,4 +64,3 @@ These STL functions are frequently used in interview questions like:
 * **String Reversal**
 * **Group Anagrams**
 
-```
