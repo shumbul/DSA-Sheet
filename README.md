@@ -21,3 +21,16 @@
 | 8   |   Check if All Characters Have Equal Number of Occurrences  | [LeetCode](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences) | String , Hash     |
 
 ---
+
+## ✅ Day 3: String & Loops
+
+| No. | Question                                                        | Link                                                                 | Topic                      |
+|-----|------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------|
+| 9   | Longest Palindrome                                               | [LeetCode](https://leetcode.com/problems/longest-palindrome)         | String, Hash               |
+| 10  | Minimum Time to Type Word Using Special Typewriter               | [LeetCode](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | String, Simulation         |
+| 11  | Check if String Is a Prefix of Array                             | [LeetCode](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array) | String, Array              |
+| 12  | Add Binary                                                       | [LeetCode](https://leetcode.com/problems/add-binary/)                | String, Math               |
+| 13  | Valid Palindrome                                                 | [LeetCode](https://leetcode.com/problems/valid-palindrome)           | String, Two Pointers       |
+
+---
+
