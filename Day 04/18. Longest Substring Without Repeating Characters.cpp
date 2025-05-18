@@ -3,17 +3,26 @@ class Solution
 public:
     int lengthOfLongestSubstring(string s) 
     {
-        unordered_set<char> chars;
-        int left = 0, max_len = 0;
-        for (int right = 0; right < s.length(); right++) 
+        unordered_set<char> letters;
+        int left=0;
+        //left pointer for sliding window
+        int max_len=0;
+        //stores length
+        for (int right=0;right<s.size();right++)
+        //right pointer traversal
         {
-            while (chars.count(s[right])) 
-            { // If duplicate found
-                chars.erase(s[left]);      // Remove from set
-                left++;                    // Move left forward
+            while (letters.count(s[right]))
+            //if right letter is already in set
+            {
+                letters.erase(s[left]);
+                //remove left letter
+                left++;
+                //reduce window
             }
-            chars.insert(s[right]);        // Add new char to set
-            max_len = max(max_len, right - left + 1); // Update max
+            letters.insert(s[right]);
+            //add the new letter in set
+            max_len=max(max_len, right-left+1);
+            //update length accordingly
         }
         return max_len;
     }
