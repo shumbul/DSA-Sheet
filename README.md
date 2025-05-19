@@ -46,10 +46,6 @@
 
 ---
 
-Glad you liked it! Here's **✅ Day 5: Intermediate String Patterns** with the problems you provided:
-
----
-
 ## ✅ Day 5: String Practice
 
 | No. | Question                  | Link                                                                | Topic                |
@@ -57,5 +53,14 @@ Glad you liked it! Here's **✅ Day 5: Intermediate String Patterns** with the p
 | 19  | Reverse Words in a String | [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string) | String, Two Pointers |
 | 20  | Word Pattern              | [LeetCode](https://leetcode.com/problems/word-pattern/)             | String, HashMap      |
 | 21  | Find and Replace Pattern  | [LeetCode](https://leetcode.com/problems/find-and-replace-pattern)  | String, HashMap      |
+
+---
+
+## ✅ Day 6: Palindromic Patterns & Substring Practice
+
+| No. | Question                                            | Link                                                                                           | Topic                           |
+| --- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------- |
+| 22  | Longest Palindromic Substring                       | [LeetCode](https://leetcode.com/problems/longest-palindromic-substring)                        | String, Dynamic Programming     |
+| 23  | Find Longest Special Substring That Occurs Thrice I | [LeetCode](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) | String, HashMap, Sliding Window |
 
 ---
