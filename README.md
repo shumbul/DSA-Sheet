@@ -34,7 +34,7 @@
 
 ---
 
-## ✅ Day 4: String Practice
+## ✅ Day 4: String, Two Pointers, Sliding Window
 
 | No. | Question                                       | Link                                                                                     | Topic                  |
 | --- | ---------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- |
@@ -43,5 +43,19 @@
 | 16  | Permutation in String                          | [LeetCode](https://leetcode.com/problems/permutation-in-string)                          | String, Sliding Window |
 | 17  | First Unique Character in a String             | [LeetCode](https://leetcode.com/problems/first-unique-character-in-a-string)             | String, HashMap        |
 | 18  | Longest Substring Without Repeating Characters | [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters) | String, Sliding Window |
+
+---
+
+Glad you liked it! Here's **✅ Day 5: Intermediate String Patterns** with the problems you provided:
+
+---
+
+## ✅ Day 5: String Practice
+
+| No. | Question                  | Link                                                                | Topic                |
+| --- | ------------------------- | ------------------------------------------------------------------- | -------------------- |
+| 19  | Reverse Words in a String | [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string) | String, Two Pointers |
+| 20  | Word Pattern              | [LeetCode](https://leetcode.com/problems/word-pattern/)             | String, HashMap      |
+| 21  | Find and Replace Pattern  | [LeetCode](https://leetcode.com/problems/find-and-replace-pattern)  | String, HashMap      |
 
 ---
