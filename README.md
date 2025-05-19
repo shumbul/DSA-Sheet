@@ -34,3 +34,14 @@
 
 ---
 
+## ✅ Day 4: String Practice
+
+| No. | Question                                       | Link                                                                                     | Topic                  |
+| --- | ---------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- |
+| 14  | Reverse String                                 | [LeetCode](https://leetcode.com/problems/reverse-string)                                 | String, Two Pointers   |
+| 15  | Isomorphic Strings                             | [LeetCode](https://leetcode.com/problems/isomorphic-strings)                             | String, HashMap        |
+| 16  | Permutation in String                          | [LeetCode](https://leetcode.com/problems/permutation-in-string)                          | String, Sliding Window |
+| 17  | First Unique Character in a String             | [LeetCode](https://leetcode.com/problems/first-unique-character-in-a-string)             | String, HashMap        |
+| 18  | Longest Substring Without Repeating Characters | [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters) | String, Sliding Window |
+
+---
