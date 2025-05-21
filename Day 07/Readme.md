@@ -1,4 +1,4 @@
-## 🍌 Binary Search on Answer – *Koko Eating Bananas Pattern*
+## 🍌 Binary Search for Interviews – *Koko Eating Bananas Pattern*
 
 ---
 
