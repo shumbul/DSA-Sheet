@@ -1,0 +1,30 @@
+// https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/
+
+class Solution {
+    int bin_search(vector<int> &nums, int target) {
+        int start=0, end=nums.size()-1, ans=nums.size();
+
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            if(nums[mid]<target){
+                start=mid+1;
+            }
+            else{
+                end=mid-1;
+                ans=mid; // lower bound
+            }
+        }
+        return ans;
+    }
+public:
+    int maximumCount(vector<int>& nums) {
+        int minpositive = bin_search(nums, 1); // gives idx of first occurrence of 1 or greater
+        int minzero = bin_search(nums, 0); // gives idx of first occurrence of 0 or greater
+        
+        int totalpositive = nums.size()-minpositive;
+        int totalnegative = minzero; 
+        return max(totalpositive, totalnegative);
+        // TC: O(logn)
+        // SC: O(1)
+    }
+};
