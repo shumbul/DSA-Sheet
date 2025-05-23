@@ -1,6 +1,23 @@
 // https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/
 
 class Solution {
+public:
+    int maximumCount(vector<int>& nums) 
+    {
+        int pos=lower_bound(nums.begin(), nums.end(), 1)-nums.begin(); 
+        //nums.begin() se iterators cancel ho jayenge aur relative position aa jayegi i.e. distance
+        //if 1 is not present, it will give smallest positive no.
+        int neg=upper_bound(nums.begin(), nums.end(), -1)-nums.begin();
+        //if -1 is not present, it will give largest negative no.
+        int pos_count=nums.size()-pos;
+        return max(neg, pos_count);
+    }
+};
+//TC O(logn)
+//stl version of binary search
+//SC O(1)
+
+class Solution {
     int bin_search(vector<int> &nums, int target) {
         int start=0, end=nums.size()-1, ans=nums.size();
 
