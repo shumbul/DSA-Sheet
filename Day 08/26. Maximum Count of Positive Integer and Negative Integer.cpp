@@ -1,5 +1,47 @@
 // https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/
 
+class Solution 
+{
+public:
+    int maximumCount(vector<int>& nums) 
+    {
+        int start = 0, end = nums.size() - 1;
+        int neg = 0, pos = 0;
+        // Count negative numbers
+        while (start <= end) 
+        {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] < 0) 
+            {
+                neg = mid + 1; // all elements till mid are negative
+                start = mid + 1;
+            } 
+            else 
+            {
+                end = mid - 1;
+            }
+        }
+        // Count positive numbers
+        start = 0, end = nums.size() - 1;
+        while (start <= end) 
+        {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] <= 0) 
+            {
+                start = mid + 1;
+            } 
+            else 
+            {
+                pos = nums.size() - mid; // all elements from mid to end are positive
+                end = mid - 1;
+            }
+        }
+        return max(neg, pos);
+    }
+};
+//TC O(logn)
+//SC O(1)
+
 class Solution {
 public:
     int maximumCount(vector<int>& nums) 
