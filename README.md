@@ -65,3 +65,51 @@
 | 24  | Find All Anagrams in a String | [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | String, Two pointer, HashMap |
 
 ---
+
+## ✅ Day 7: Binary Search for Interviews
+
+| No. | Question            | Link                                                           | Topic                 |
+| --- | ------------------- | -------------------------------------------------------------- | --------------------- |
+| 25  | Koko Eating Bananas | [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search, Greedy |
+
+---
+
+## ✅ Day 8: Binary Search Practice
+
+| No. | Question                                               | Link                                                                                             | Topic         |
+| --- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------- |
+| 26  | Binary Search                                          | [LeetCode](https://leetcode.com/problems/binary-search/)                                         | Binary Search |
+| 27  | Guess Number Higher or Lower                           | [LeetCode](https://leetcode.com/problems/guess-number-higher-or-lower)                           | Binary Search |
+| 28  | First Bad Version                                      | [LeetCode](https://leetcode.com/problems/first-bad-version/)                                     | Binary Search |
+| 29  | Maximum Count of Positive Integer and Negative Integer | [LeetCode](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer) | Binary Search |
+| 30  | Valid Perfect Square                                   | [LeetCode](https://leetcode.com/problems/valid-perfect-square)                                   | Binary Search |
+
+---
+
+## ✅ Day 9: Binary Search Variations & Greedy
+
+| No. | Question                             | Link                                                                           | Topic                 |
+| --- | ------------------------------------ | ------------------------------------------------------------------------------ | --------------------- |
+| 31  | Longest Subsequence with Limited Sum | [LeetCode](https://leetcode.com/problems/longest-subsequence-with-limited-sum) | Binary Search, Greedy |
+| 32  | Find Peak Element                    | [LeetCode](https://leetcode.com/problems/find-peak-element/)                   | Binary Search         |
+
+---
+
+## ✅ Day 10: Binary Search on Answer
+
+| No. | Question                                               | Link                                                                                              | Topic                   |
+| --- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | ----------------------- |
+| 33  | Minimized Maximum of Products Distributed to Any Store | [LeetCode](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) | Binary Search on Answer |
+| 34  | Minimum Time to Repair Cars                            | [LeetCode](https://leetcode.com/problems/minimum-time-to-repair-cars/)                            | Binary Search on Answer |
+| 35  | Capacity to Ship Packages Within D Days                | [LeetCode](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)                | Binary Search on Answer |
+
+---
+
+## ✅ Day 11: Binary Search on Answer – Continued
+
+| No. | Question                                  | Link                                                                                 | Topic                   |
+| --- | ----------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| 36  | Minimum Number of Days to Make m Bouquets | [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | Binary Search on Answer |
+| 37  | Aggressive Cows                           | [GFG](https://www.geeksforgeeks.org/problems/aggressive-cows/1)                      | Binary Search on Answer |
+
+---
