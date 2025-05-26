@@ -1,130 +1,135 @@
-# 🔗 Notes on `unordered_map`, `set`, and `multimap` in C++
+# 🧠 Notes on `map`, `unordered_map`, `set`, `unordered_set`, and `multimap` in C++
 
 ---
 
-## 📌 1. Overview
+## 📌 1. Comparison Overview
 
-| Data Structure  | Key Uniqueness | Maintains Order | Allows Duplicate Keys | Underlying Structure |
-| --------------- | -------------- | --------------- | --------------------- | -------------------- |
-| `unordered_map` | ✅ Yes          | ❌ No            | ❌ No                  | Hash Table           |
-| `set`           | ✅ Yes          | ✅ Yes (sorted)  | ❌ No                  | Red-Black Tree (BST) |
-| `multimap`      | ❌ No           | ✅ Yes (sorted)  | ✅ Yes                 | Red-Black Tree (BST) |
+| Data Structure        | Key Unique | Ordered?    | Duplicates? | Avg Time (Insert/Search) | Underlying Structure |
+| --------------------- | ---------- | ----------- | ----------- | ------------------------ | -------------------- |
+| `unordered_map`       | ✅ Yes      | ❌ No        | ❌ No        | O(1)                     | Hash Table           |
+| `map` (`ordered_map`) | ✅ Yes      | ✅ Yes (ASC) | ❌ No        | O(log n)                 | Red-Black Tree (BST) |
+| `unordered_set`       | ✅ Yes      | ❌ No        | ❌ No        | O(1)                     | Hash Table           |
+| `set`                 | ✅ Yes      | ✅ Yes (ASC) | ❌ No        | O(log n)                 | Red-Black Tree (BST) |
+| `multimap`            | ❌ No       | ✅ Yes (ASC) | ✅ Yes       | O(log n)                 | Red-Black Tree (BST) |
 
----
-
-## ⏱️ 2. Time Complexity
-
-| Operation  | `unordered_map`       | `set` / `map` | `multimap` |
-| ---------- | --------------------- | ------------- | ---------- |
-| Insert     | O(1) avg / O(n) worst | O(log n)      | O(log n)   |
-| Search     | O(1) avg / O(n) worst | O(log n)      | O(log n)   |
-| Erase      | O(1) avg / O(n) worst | O(log n)      | O(log n)   |
-| Count/Find | O(1)                  | O(log n)      | O(log n)   |
-
-> ✅ `unordered_map` is faster **on average** but does **not maintain order**. Use `map` or `set` when ordering is needed.
+> ⚠️ Average time for `unordered_*` structures depends on hash function; worst case can degrade to O(n).
 
 ---
 
-## 🔍 3. Syntax & Usage
+## ⏱️ 2. Time Complexity Summary
 
-### 🧠 `unordered_map` Example
+| Operation | `map`    | `unordered_map` | `set`    | `unordered_set` | `multimap` |
+| --------- | -------- | --------------- | -------- | --------------- | ---------- |
+| Insert    | O(log n) | O(1) avg        | O(log n) | O(1) avg        | O(log n)   |
+| Search    | O(log n) | O(1) avg        | O(log n) | O(1) avg        | O(log n)   |
+| Erase     | O(log n) | O(1) avg        | O(log n) | O(1) avg        | O(log n)   |
+
+---
+
+## 🧪 3. Syntax & Examples
+
+### ✅ `unordered_map`
 
 ```cpp
-unordered_map<int, string> mp;
-mp[1] = "one";
-mp[2] = "two";
-
-// Access
-if (mp.count(2)) cout << mp[2];
-
-// Traverse
-for (auto& p : mp)
-    cout << p.first << " -> " << p.second << endl;
+unordered_map<int, string> um;
+um[1] = "A";
+um[2] = "B";
+if (um.count(2)) cout << um[2];
 ```
 
-### 🧠 `set` Example
+### ✅ `map` (ordered)
 
 ```cpp
-set<int> s;
-s.insert(10);
-s.insert(5);
-s.insert(10);  // Duplicates ignored
+map<int, string> om;
+om[1] = "A";
+om[3] = "C";
+om[2] = "B";
 
-for (int val : s)
-    cout << val << " ";  // Output: 5 10
+for (auto& p : om)
+    cout << p.first << " => " << p.second;  // Sorted by key
 ```
 
-### 🧠 `multimap` Example
+### ✅ `unordered_set`
 
 ```cpp
-multimap<int, string> mm;
-mm.insert({1, "A"});
-mm.insert({1, "B"});
-mm.insert({2, "C"});
+unordered_set<int> us;
+us.insert(5);
+us.insert(10);
+if (us.find(5) != us.end()) cout << "Found";
+```
 
-// Iterate
-for (auto& p : mm)
-    cout << p.first << " -> " << p.second << endl;
+### ✅ `set`
 
-// Count occurrences
-cout << mm.count(1);  // Output: 2
+```cpp
+set<int> s = {3, 1, 4, 2};
+for (int x : s) cout << x << " ";  // Output: 1 2 3 4
+```
 
-// Get range of values with same key
-auto range = mm.equal_range(1);
+### ✅ `multimap`
+
+```cpp
+multimap<string, int> mm;
+mm.insert({"a", 1});
+mm.insert({"a", 2});
+mm.insert({"b", 3});
+
+auto range = mm.equal_range("a");
 for (auto it = range.first; it != range.second; ++it)
-    cout << it->second << " ";  // Output: A B
+    cout << it->second << " ";  // Output: 1 2
 ```
 
 ---
 
-## ⚠️ 4. Common Pitfalls
+## 🚫 4. Pitfalls & Notes
 
-* `unordered_map` doesn’t guarantee order; don’t use it when order matters.
-* Avoid modifying keys in `set` or `map` after insertion — undefined behavior.
-* In `multimap`, use `equal_range()` to safely access multiple entries of the same key.
-* `unordered_map` has O(n) worst case due to hash collisions.
-
----
-
-## 🧪 5. When to Use What?
-
-| Use Case                                   | Suggested DS            |
-| ------------------------------------------ | ----------------------- |
-| Count frequencies                          | `unordered_map` / `map` |
-| Store unique sorted values                 | `set`                   |
-| Store duplicate keys with sorted ordering  | `multimap`              |
-| Fast lookups (non-sorted)                  | `unordered_map`         |
-| Custom comparator or order-based traversal | `set` / `map`           |
+* ❗ `unordered_map` & `unordered_set` **do not maintain order**.
+* ⚠️ `multimap` allows **duplicate keys**, unlike `map`.
+* 🔁 `set` and `map` maintain **sorted order**, useful when traversing in order.
+* 🛑 You cannot modify keys directly in `map`, `set`, or `multimap` after insertion.
+* ⛓️ For `multimap`, use `.equal_range(key)` to access all values of a repeated key.
 
 ---
 
-## 📘 Practice Problems
+## 💡 5. When to Use What?
 
-### 🔹 For `unordered_map` / `map`
+| Use Case                                | Recommended                       |
+| --------------------------------------- | --------------------------------- |
+| Fast lookup without ordering            | `unordered_map` / `unordered_set` |
+| Need ordered traversal                  | `map` / `set`                     |
+| Count of elements, word frequency, etc. | `unordered_map`                   |
+| Storing unique elements                 | `set` / `unordered_set`           |
+| Duplicate keys with sorted retrieval    | `multimap`                        |
+| Custom sorting on keys                  | `map` / `set`                     |
+
+---
+
+## 📘 6. Practice Problems
+
+### 🔸 Hash Maps
 
 * [Two Sum](https://leetcode.com/problems/two-sum/)
-* [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
-* [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 * [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+* [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
-### 🔹 For `set`
+### 🔸 Sets
 
 * [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
 * [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-* [Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)
+* [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-### 🔹 For `multimap` (less common but useful in interviews)
+### 🔸 Multimap-Like Scenarios
 
-* [Reorder Log Files](https://leetcode.com/problems/reorder-data-in-log-files/) *(custom sorting)*
-* [Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
-* [Design a Leaderboard](https://leetcode.com/problems/design-a-leaderboard/) *(can be solved with multimap for scores)*
+* [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)
+* [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
+* [Design Leaderboard](https://leetcode.com/problems/design-a-leaderboard/)
+* [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)
 
 ---
 
-## 📚 Glossary
+## 🧰 7. Glossary
 
-* 🔹 **Hash Table**: Stores key-value pairs with fast average-time lookup.
-* 🔹 **Red-Black Tree**: A self-balancing BST used by `map`, `set`, `multimap`.
-* 🔹 **Multimap**: Like `map`, but allows multiple entries for the same key.
+* 🔹 **Hash Table**: Stores key-value pairs with average O(1) lookup.
+* 🔹 **Red-Black Tree**: Self-balancing BST (O(log n) operations).
+* 🔹 **Multimap**: Allows duplicate keys; maintains sorted order.
 
 ---
