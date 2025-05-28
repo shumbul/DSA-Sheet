@@ -113,3 +113,37 @@
 | 37  | Aggressive Cows                           | [GFG](https://www.geeksforgeeks.org/problems/aggressive-cows/1)                      | Binary Search on Answer |
 
 ---
+
+## ✅ Day 12: Hash table & Number Theory
+
+| No. | Question                              | Link                                                                            | Topic                   |
+| --- | ------------------------------------- | ------------------------------------------------------------------------------- | ----------------------- |
+| 38  | Majority Element                      | [LeetCode](https://leetcode.com/problems/majority-element)                      | Array, Hash table |
+| 39  | Majority Element II                   | [LeetCode](https://leetcode.com/problems/majority-element-ii)                   | Array, Hash table |
+| 40  | Count the Digits That Divide a Number | [LeetCode](https://leetcode.com/problems/count-the-digits-that-divide-a-number) | Hash table, Number Theory     |
+
+---
+
+
+## ✅ Day 13: Math & Hash table
+
+| No. | Question       | Link                                                      | Topic                    |
+| --- | -------------- | --------------------------------------------------------- | ------------------------ |
+| 41  | Ugly Number    | [LeetCode](https://leetcode.com/problems/ugly-number/)    | Hash table, Math                     |
+| 42  | Happy Number   | [LeetCode](https://leetcode.com/problems/happy-number/)   | Math, HashSet, Cycle     |
+| 43  | Add Digits     | [LeetCode](https://leetcode.com/problems/add-digits/)     | Math, Digit Manipulation |
+| 44  | Missing Number | [LeetCode](https://leetcode.com/problems/missing-number/) | Hash table        |
+
+---
+
+## ✅ Day 14: Matrix & 2D Arrays
+
+| No. | Question                       | Link                                                                     | Topic                |
+| --- | ------------------------------ | ------------------------------------------------------------------------ | -------------------- |
+| 45  | Set Matrix Zeroes              | [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)             | Matrix, In-place     |
+| 46  | Convert 1D Array into 2D Array | [LeetCode](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 2D Array, Simulation |
+| 47  | Richest Customer Wealth        | [LeetCode](https://leetcode.com/problems/richest-customer-wealth)        | Matrix, Iteration    |
+| 48  | Flood Fill                     | [LeetCode](https://leetcode.com/problems/flood-fill)                     | DFS, BFS, Matrix     |
+| 49  | Spiral Matrix                  | [LeetCode](https://leetcode.com/problems/spiral-matrix)                  | Matrix, Simulation   |
+
+---
