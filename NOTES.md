@@ -12,3 +12,4 @@
 | Day 12 | 🧠 Notes on map, unordered_map, set, unordered_set, and multimap in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2012/Readme.md) |
 | Day 14 | 🧮 Notes on Matrix in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2014/Readme.md) |
 | Day 15 | 📝 Notes on Stack and Queue in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2015/Readme.md) |
+| Day 15 | 📊 Stack, Queue & Monotonic Structures, Practice Problems | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2016/Readme.md) |
