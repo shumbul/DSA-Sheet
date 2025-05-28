@@ -10,4 +10,5 @@
 | Day 08 | 🔍 Binary Search                         | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2008/Readme.md) |
 | Day 09 | 📌 Pointers, Address-of Operator, Lower Bound & Upper Bound (C++ STL) & Quiz      | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2009/Readme.md) |
 | Day 12 | 🧠 Notes on map, unordered_map, set, unordered_set, and multimap in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2012/Readme.md) |
-| Day 13 | 🧮 Notes on Matrix in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2013/Readme.md) |
+| Day 14 | 🧮 Notes on Matrix in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2014/Readme.md) |
+| Day 15 | 📝 Notes on Stack and Queue in C++ | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2015/Readme.md) |
