@@ -52,3 +52,31 @@ public:
 };
 //TC O(N)
 //SC O(1)
+
+class Solution {
+public:
+    bool isValid(string s) {
+        
+        stack<char> brac;
+        for (int i=0;i<s.size();i++)
+        {
+            if (s[i]=='(' || s[i]=='{' || s[i]=='[')
+               brac.push(s[i]);
+            else
+            {
+                if (brac.empty())
+                    return false;
+                if (s[i]==')' && brac.top()!='(')
+                    return false;
+                if (s[i]==']' && brac.top()!='[')
+                    return false;
+                if (s[i]=='}' && brac.top()!='{')
+                    return false;
+                brac.pop();
+            } 
+        }
+        if (brac.empty())
+            return true;
+        return false;
+    }
+};
