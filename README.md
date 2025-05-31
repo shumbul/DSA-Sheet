@@ -143,7 +143,26 @@
 | 45  | Set Matrix Zeroes              | [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)             | Matrix, In-place     |
 | 46  | Convert 1D Array into 2D Array | [LeetCode](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 2D Array, Simulation |
 | 47  | Richest Customer Wealth        | [LeetCode](https://leetcode.com/problems/richest-customer-wealth)        | Matrix, Iteration    |
-| 48  | Flood Fill                     | [LeetCode](https://leetcode.com/problems/flood-fill)                     | DFS, BFS, Matrix     |
-| 49  | Spiral Matrix                  | [LeetCode](https://leetcode.com/problems/spiral-matrix)                  | Matrix, Simulation   |
 
 ---
+
+## ✅ Day 15: Matrix & Traversals Practice
+
+| No. | Question                             | Link                                                                            | Topic                    |
+| --- | ------------------------------------ | ------------------------------------------------------------------------------- | ------------------------ |
+| 48  | Flood Fill                           | [LeetCode](https://leetcode.com/problems/flood-fill)                            | Matrix, DFS/BFS          |
+| 49  | Spiral Matrix                        | [LeetCode](https://leetcode.com/problems/spiral-matrix)                         | Matrix, Simulation       |
+| 50  | Find All Lonely Numbers in the Array | [LeetCode](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/) | Hashing, Array Traversal |
+
+---
+
+## ✅ Day 16: Stack, Queue & Matrix Validation
+
+| No. | Question                                           | Link                                                                                          | Topic                   |
+| --- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| 51  | Check if Every Row and Column Contains All Numbers | [LeetCode](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/) | Matrix, Validation      |
+| 52  | Implement Queue using Stacks                       | [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks)                        | Stack, Queue            |
+| 53  | Implement Stack using Queues                       | [LeetCode](https://leetcode.com/problems/implement-stack-using-queues)                        | Queue, Stack Simulation |
+
+---
+
