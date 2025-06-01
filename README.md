@@ -156,7 +156,7 @@
 
 ---
 
-## ✅ Day 16: Stack, Queue & Matrix Validation
+## ✅ Day 16: Matrix Validation, Stack & Queue
 
 | No. | Question                                           | Link                                                                                          | Topic                   |
 | --- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
@@ -166,3 +166,43 @@
 
 ---
 
+## ✅ Day 17: Monotonic Stack
+
+| No. | Question           | Link                                                          | Topic                   |
+| --- | ------------------ | ------------------------------------------------------------- | ----------------------- |
+| 54  | Min Stack          | [LeetCode](https://leetcode.com/problems/min-stack/)          | Stack, Design           |
+| 55  | Daily Temperatures | [LeetCode](https://leetcode.com/problems/daily-temperatures/) | Monotonic Stack, Arrays |
+
+---
+
+## ✅ Day 18: Matrix Operations & Validation
+
+| No. | Question           | Link                                                          | Topic                      |
+| --- | ------------------ | ------------------------------------------------------------- | -------------------------- |
+| 56  | Transpose Matrix   | [LeetCode](https://leetcode.com/problems/transpose-matrix/)   | Matrix, Simulation         |
+| 57  | Search a 2D Matrix | [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | Binary Search, Matrix      |
+| 58  | Rotate Image       | [LeetCode](https://leetcode.com/problems/rotate-image/)       | Matrix, In-place Rotation  |
+| 59  | Valid Sudoku       | [LeetCode](https://leetcode.com/problems/valid-sudoku/)       | Hashing, Matrix Validation |
+
+---
+
+## ✅ Day 19: Stack, Queue & Element Comparison
+
+| No. | Question                                 | Link                                                                               | Topic                 |
+| --- | ---------------------------------------- | ---------------------------------------------------------------------------------- | --------------------- |
+| 60  | Number of Recent Calls                   | [LeetCode](https://leetcode.com/problems/number-of-recent-calls/)                  | Queue, Sliding Window |
+| 61  | Next Greater Element I                   | [LeetCode](https://leetcode.com/problems/next-greater-element-i/)                  | Stack, Hash Map       |
+| 62  | Remove All Adjacent Duplicates in String | [LeetCode](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) | Stack, String         |
+| 63  | Asteroid Collision                       | [LeetCode](https://leetcode.com/problems/asteroid-collision/)                      | Stack, Simulation     |
+
+---
+
+## ✅ Day 20: Strings, Encoding & Stack-Based Scoring
+
+| No. | Question                                | Link                                                                              | Topic                    |
+| --- | --------------------------------------- | --------------------------------------------------------------------------------- | ------------------------ |
+| 64  | Excel Sheet Column Title                | [LeetCode](https://leetcode.com/problems/excel-sheet-column-title)                | Math, String Conversion  |
+| 65  | Longest Common Prefix                   | [LeetCode](https://leetcode.com/problems/longest-common-prefix)                   | Queue |
+| 66  | Score of Parentheses                    | [LeetCode](https://leetcode.com/problems/score-of-parentheses)                    | Stack, Recursion         |
+
+---
