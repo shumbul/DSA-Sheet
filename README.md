@@ -206,3 +206,112 @@
 | 66  | Score of Parentheses                    | [LeetCode](https://leetcode.com/problems/score-of-parentheses)                    | Stack, Recursion         |
 
 ---
+
+## ✅ Day 21: Greedy & Stack-based Decisions
+
+| No. | Question        | Link                                                       | Topic         |
+| --- | --------------- | ---------------------------------------------------------- | ------------- |
+| 68  | Remove K Digits | [LeetCode](https://leetcode.com/problems/remove-k-digits/) | Greedy, Stack |
+
+---
+
+## ✅ Day 22: Design & Sliding Window
+
+| No. | Question               | Link                                                              | Topic                 |
+| --- | ---------------------- | ----------------------------------------------------------------- | --------------------- |
+| 69  | Design Circular Queue  | [LeetCode](https://leetcode.com/problems/design-circular-queue/)  | Queue, Design         |
+| 70  | Sliding Window Maximum | [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window, Deque |
+
+---
+
+## ✅ Day 23: Stack & Backtracking
+
+| No. | Question                       | Link                                                                      | Topic            |
+| --- | ------------------------------ | ------------------------------------------------------------------------- | ---------------- |
+| 71  | Largest Rectangle in Histogram | [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Stack, Monotonic |
+| 72  | Permutations                   | [LeetCode](https://leetcode.com/problems/permutations/)                   | Backtracking     |
+
+---
+
+## ✅ Day 24: Greedy & DP Transitions
+
+| No. | Question     | Link                                                    | Topic      |
+| --- | ------------ | ------------------------------------------------------- | ---------- |
+| 73  | Jump Game    | [LeetCode](https://leetcode.com/problems/jump-game/)    | Greedy, DP |
+| 74  | Jump Game II | [LeetCode](https://leetcode.com/problems/jump-game-ii/) | Greedy, DP |
+
+---
+
+## ✅ Day 25: Recursion & Stack Simulation
+
+| No. | Question         | Link                                                        | Topic         |
+| --- | ---------------- | ----------------------------------------------------------- | ------------- |
+| 75  | Fibonacci Number | [LeetCode](https://leetcode.com/problems/fibonacci-number/) | Recursion, DP |
+| 76  | Decode String    | [LeetCode](https://leetcode.com/problems/decode-string/)    | Stack, String |
+
+---
+
+## ✅ Day 26: DP Transitions – Easy to Medium
+
+| No. | Question        | Link                                                       | Topic             |
+| --- | --------------- | ---------------------------------------------------------- | ----------------- |
+| 77  | Climbing Stairs | [LeetCode](https://leetcode.com/problems/climbing-stairs/) | DP, Recursion     |
+| 78  | Jump Game III   | [LeetCode](https://leetcode.com/problems/jump-game-iii/)   | DFS, Backtracking |
+
+---
+
+## ✅ Day 27: Triangle Patterns & Edit Distance
+
+| No. | Question          | Link                                                        | Topic               |
+| --- | ----------------- | ----------------------------------------------------------- | ------------------- |
+| 79  | Pascal's Triangle | [LeetCode](https://leetcode.com/problems/pascals-triangle/) | DP, Math            |
+| 80  | Edit Distance     | [LeetCode](https://leetcode.com/problems/edit-distance/)    | DP, String Matching |
+
+---
+
+## ✅ Day 28: Recursion & Minimum Path DP
+
+| No. | Question         | Link                                                        | Topic                            |
+| --- | ---------------- | ----------------------------------------------------------- | -------------------------------- |
+| 81  | Pow(x, n)        | [LeetCode](https://leetcode.com/problems/powx-n/)           | Recursion, Binary Exponentiation |
+| 82  | Minimum Path Sum | [LeetCode](https://leetcode.com/problems/minimum-path-sum/) | DP, Matrix                       |
+
+---
+
+## ✅ Day 29: Power Checks using Math & Bitwise
+
+| No. | Question       | Link                                                      | Topic           |
+| --- | -------------- | --------------------------------------------------------- | --------------- |
+| 83  | Power of Two   | [LeetCode](https://leetcode.com/problems/power-of-two/)   | Bitwise, Math   |
+| 84  | Power of Three | [LeetCode](https://leetcode.com/problems/power-of-three/) | Math, Recursion |
+| 85  | Power of Four  | [LeetCode](https://leetcode.com/problems/power-of-four/)  | Bitwise, Math   |
+
+---
+
+## ✅ Day 30: Game Theory & String Simulation
+
+| No. | Question                                 | Link                                                                                | Topic             |
+| --- | ---------------------------------------- | ----------------------------------------------------------------------------------- | ----------------- |
+| 86  | Find the K-th Character in String Game I | [LeetCode](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) | String Simulation |
+| 87  | Elimination Game                         | [LeetCode](https://leetcode.com/problems/elimination-game/)                         | Math, Recursion   |
+| 88  | Divisor Game                             | [LeetCode](https://leetcode.com/problems/divisor-game/)                             | Game Theory, DP   |
+
+---
+
+## ✅ Day 31: Coin Game & Math Simulation
+
+| No. | Question                             | Link                                                                   | Topic           |
+| --- | ------------------------------------ | ---------------------------------------------------------------------- | --------------- |
+| 89  | Find the Winning Player in Coin Game | [LeetCode](https://leetcode.com/problems/find-the-winner-of-the-game/) | Game Simulation |
+| 90  | Stone Game                           | [LeetCode](https://leetcode.com/problems/stone-game/)                  | DP, Game Theory |
+| 91  | Pascal's Triangle II                 | [LeetCode](https://leetcode.com/problems/pascals-triangle-ii/)         | DP, Math        |
+
+---
+
+## ✅ Day 32: Number Construction & Set Logic
+
+| No. | Question                    | Link                                                                   | Topic                  |
+| --- | --------------------------- | ---------------------------------------------------------------------- | ---------------------- |
+| 92  | Unique 3-Digit Even Numbers | [LeetCode](https://leetcode.com/problems/unique-3-digit-even-numbers/) | Math, Set, Brute Force |
+
+---
