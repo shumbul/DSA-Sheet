@@ -38,7 +38,7 @@ public:
         int n = height.size();
         int total = 0;
         // For each index, try to trap water
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { //O(N)
             int leftMax = findLeftMax(height, i);
             int rightMax = findRightMax(height, i);
             int water = min(leftMax, rightMax) - height[i];
@@ -47,14 +47,14 @@ public:
         }
         return totalWater;
     }
-    int findLeftMax(vector<int>& height, int i) {
+    int findLeftMax(vector<int>& height, int i) { // O(n)
         int maxLeft = 0;
         for (int j = i - 1; j >= 0; j--) {
             maxLeft = max(maxLeft, height[j]);
         }
         return maxLeft;
     }
-    int findRightMax(vector<int>& height, int i) {
+    int findRightMax(vector<int>& height, int i) { // O(m)
         int maxRight = 0;
         for (int j = i + 1; j < height.size(); j++) {
             maxRight = max(maxRight, height[j]);
@@ -62,5 +62,33 @@ public:
         return maxRight;
     }
 };
-//TC O(N^2)
+//TC O(N)*O(n+m)
 //SC O(1)
+
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        vector<int> prefix(height.size());
+        vector<int> suffix(height.size());
+        int total=0;
+        int water=0;
+        prefix[0]=height[0];
+        suffix[height.size()-1]=height[height.size()-1];
+        for (int i=1;i<height.size();i++)
+        {
+            prefix[i]=max(prefix[i-1], height[i]);
+        }
+         for (int i=height.size()-2;i>=0;i--)
+        {
+            suffix[i]=max(suffix[i+1], height[i]);
+        }
+        for (int i=0;i<height.size();i++)
+        {
+           water=min(prefix[i], suffix[i])-height[i];
+           if (water>0)
+            total+=water;
+        }
+        return total;
+    }
+};
+//O(3n)
