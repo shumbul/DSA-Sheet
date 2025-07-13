@@ -1,3 +1,25 @@
+//greedy-> giving wrong answer
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        sort(coins.rbegin(), coins.rend()); // Sort in descending order
+        int count = 0;
+        for (int coin : coins) {
+            if (amount == 0) 
+                break;
+            if (coin <= amount) {
+                int take = amount / coin; // take as many of this coin as possible
+                count += take;
+                amount -= take * coin;
+            }
+        }
+        if (amount==0)
+            return count;
+        return -1; // if we couldn't form amount, return -1
+    }
+};
+
+//recursion
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
