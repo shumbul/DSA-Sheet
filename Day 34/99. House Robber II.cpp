@@ -1,3 +1,11 @@
+/*Since we only need the last two dp values at each step, we can:
+Use 2 variables:
+prev1 for dp[i-1]
+prev2 for dp[i-2]
+Compute curr (which is dp[i])
+Then update:
+prev2 = prev1
+prev1 = curr*/
 class Solution {
 public:
     int rob(vector<int>& nums) {
