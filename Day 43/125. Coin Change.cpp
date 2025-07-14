@@ -47,3 +47,29 @@ public:
         return ans;
     }
 };
+
+//dp
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        int n = coins.size();
+        vector<vector<int>> dp(n, vector<int>(amount + 1, -1)); //row is current coin in coins, col is remaining amount to make, dp[i][j] stores the minimum number of coins needed to make amount j using coins from index i to the end of the coins array.
+        int res = helper(coins, amount, 0, dp);
+        if (res>=1e9)
+            return -1;
+        return res;
+    }
+    int helper(vector<int>& coins, int amount, int curridx, vector<vector<int>>& dp) {
+        if (amount == 0)
+            return 0;
+        if (curridx >= coins.size())
+            return 1e9;  // impossible case
+        if (dp[curridx][amount] != -1)
+            return dp[curridx][amount];
+        int take = 1e9, skip = 1e9;
+        if (coins[curridx] <= amount)
+            take = 1 + helper(coins, amount - coins[curridx], curridx, dp);
+        skip = helper(coins, amount, curridx + 1, dp);
+        return dp[curridx][amount] = min(take, skip);
+    }
+};
