@@ -35,3 +35,5 @@ public:
         return result;
     }
 };
+
+//you only visit the root after visiting everything else. Unlike preorder/inorder, you can't "visit as you go"
