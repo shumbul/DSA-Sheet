@@ -37,3 +37,40 @@ public:
 };
 
 //you only visit the root after visiting everything else. Unlike preorder/inorder, you can't "visit as you go"
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        TreeNode* curr = root;
+        while (curr != nullptr) {
+            if (curr->right == nullptr) {
+                // No left subtree, visit current node and go right
+                ans.push_back(curr->val);
+                curr = curr->left;
+            } 
+            else {
+                // Find the inorder prev
+                TreeNode* prev = curr->right;
+                while (prev->left != nullptr && prev->left != curr) {
+                    prev = prev->left;
+                }  
+                if (prev->left == nullptr) {
+                    // Create thread to curr node
+                    ans.push_back(curr->val);
+                    prev->left = curr;
+                    curr = curr->right;
+                } 
+                else {
+                    // Thread already exists, remove it and visit curr node
+                    prev->left = nullptr;
+                   // ans.push_back(curr->val);
+                    curr = curr->left;
+                }
+            }
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};
+//root->right->left reverse
+//left->right->root
