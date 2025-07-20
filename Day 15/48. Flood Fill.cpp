@@ -1,3 +1,4 @@
+//DFS
 class Solution {
     //directions
     int dx[4]={0,0,1,-1};
@@ -28,3 +29,35 @@ public:
 };
 //TC O(m*n)
 //SC O(m*n)
+
+//BFS
+class Solution {
+    int dx[4] = {0, 1, 0, -1};
+    int dy[4] = {1, 0, -1, 0};
+    queue<pair<int, int>> nodes;
+public:
+    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
+        int original = image[sr][sc];
+        if (image[sr][sc] == color)
+            return image;
+        nodes.push({sr,sc});
+        helper(image, original, color);
+        return image;
+    }
+    void helper(vector<vector<int>>& image, int original, int color) {
+        while (!nodes.empty()) {
+            int frontx = nodes.front().first;
+            int fronty = nodes.front().second;
+            nodes.pop();
+            if (fronty >= 0 && frontx >= 0 && frontx < image.size() &&
+                fronty < image[0].size() && image[frontx][fronty] == original) {
+                image[frontx][fronty] = color;
+                for (int i = 0; i < 4; i++) {
+                    int newi = frontx + dx[i];
+                    int newj = fronty + dy[i];
+                    nodes.push({newi, newj});
+                }
+            }
+        }
+    }
+};
