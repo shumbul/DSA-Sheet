@@ -1,3 +1,4 @@
+//dfs
 class Solution {
     vector<int> visited;
 public:
@@ -35,3 +36,45 @@ SC O(n)+O(n)
 Visited array: O(n)
 Call stack (DFS recursion): O(n)
 */
+
+class Solution {
+public:
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        int n = isConnected.size();
+        vector<vector<int>> adj(n);
+        // Convert matrix to adjacency list
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i != j && isConnected[i][j] == 1) {
+                    adj[i].push_back(j);
+                }
+            }
+        }
+        vector<int> visited(n, 0);
+        int count = 0;
+        // BFS traversal for each unvisited node
+        for (int i = 0; i < n; i++) {
+            if (visited[i] == 0) {
+                bfs(i, visited, adj);
+                count++;  // found a new province
+            }
+        }
+        return count;
+    }
+    void bfs(int node, vector<int>& visited, vector<vector<int>>& adj) {
+        queue<int> q;
+        visited[node] = 1;
+        q.push(node);
+        while (!q.empty()) {
+            int frontt = q.front();
+            q.pop();
+            //  get the correct neighbors
+            for (int nbr : adj[frontt]) {
+                if (visited[nbr] == 0) {
+                    visited[nbr] = 1;
+                    q.push(nbr);
+                }
+            }
+        }
+    }
+};
