@@ -1,3 +1,4 @@
+//DFS
 class Solution {
     unordered_set<char> currVisited;
     unordered_set<char> visited;
@@ -48,5 +49,64 @@ public:
         visited.insert(node);
         ans += node;
         return true;
+    }
+};
+
+//BFS
+class Solution {
+public:
+    string findOrder(vector<string>& words) {
+        unordered_map<char, unordered_set<char>> graph;
+        unordered_map<char, int> indegree;
+        // Step 1: Initialize all characters in the graph
+        for (const string& word : words) {
+            for (char c : word) {
+                graph[c];        // ensure key exists
+                indegree[c] = 0; // initialize indegree
+            }
+        }
+        // Step 2: Build the graph based on word differences
+        for (int i = 0; i < words.size() - 1; i++) {
+            string& w1 = words[i];
+            string& w2 = words[i + 1];
+            bool foundDifference = false;
+            // Invalid prefix check (e.g., "abc" before "ab")
+            if (w1.size() > w2.size() && w1.substr(0, w2.size()) == w2)
+                return "";
+            for (int j = 0; j < min(w1.size(), w2.size()); j++) {
+                if (w1[j] != w2[j]) {
+                    char u = w1[j], v = w2[j];
+                    // Only add edge if not already added
+                    if (graph[u].find(v) == graph[u].end()) {
+                        graph[u].insert(v);
+                        indegree[v]++;
+                    }
+                    break;
+                }
+            }
+        }
+        // Step 3: Topological sort using Kahn’s algorithm (BFS)
+        queue<char> q;
+        string ans;
+        // Push all nodes with 0 indegree
+        for (auto& it : indegree) {
+            if (it.second == 0)
+                q.push(it.first);
+        }
+        while (!q.empty()) {
+            char node = q.front();
+            q.pop();
+            ans += node;
+            for (char neighbor : graph[node]) {
+                indegree[neighbor]--;
+                if (indegree[neighbor] == 0)
+                    q.push(neighbor);
+            }
+        }
+        // Step 4: If all nodes are included, return answer
+        if (ans.size() == indegree.size())
+            return ans;
+        else
+            return ""; // Cycle detected
     }
 };
