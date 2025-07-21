@@ -1,3 +1,4 @@
+//BFS
 class Solution {
         set<int> visited_dp;
     set<int> currVisited;
@@ -34,5 +35,42 @@ public:
         visited_dp.insert(node); //marking node as safe
         order.push_back(node);
         return false;
+    }
+};
+
+//DFS
+class Solution {
+public:
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        unordered_map<int, vector<int>> graph;
+        vector<int> indegree(numCourses, 0);
+        vector<int> order; // This will store the topological order
+        // Step 1: Build graph and indegree array
+        for (auto i : prerequisites) {
+            graph[i[1]].push_back(i[0]);  // i[1] -> i[0]
+            indegree[i[0]]++;
+        }
+        // Step 2: Add all courses with 0 indegree to queue
+        queue<int> courses;
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0)
+                courses.push(i);
+        }
+        // Step 3: Process queue (Topological Sort)
+        while (!courses.empty()) {
+            int frontt = courses.front();
+            courses.pop();
+            order.push_back(frontt); // Record this course
+            for (int nbr : graph[frontt]) {
+                indegree[nbr]--;
+                if (indegree[nbr] == 0)
+                    courses.push(nbr);
+            }
+        }
+        // Step 4: Check if topological ordering includes all courses
+        if (order.size() == numCourses)
+            return order;
+        else
+            return {}; // Cycle detected, no valid ordering
     }
 };
