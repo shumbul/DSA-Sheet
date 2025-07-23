@@ -315,3 +315,197 @@
 | 92  | Unique 3-Digit Even Numbers | [LeetCode](https://leetcode.com/problems/unique-3-digit-even-numbers/) | Math, Set, Brute Force |
 
 ---
+
+## ✅ Day 33: Arrays & Dynamic Programming
+
+| No. | Question                      | Link                                                                 | Topic                          |
+| --- | ----------------------------- | -------------------------------------------------------------------- | ------------------------------ |
+| 95  | Intersection of Multiple Arrays | [LeetCode](https://leetcode.com/problems/intersection-of-multiple-arrays/) | Arrays, HashSet               |
+| 96  | House Robber                  | [LeetCode](https://leetcode.com/problems/house-robber/)              | DP, 1D DP, Optimization         |
+| 97  | Trapping Rain Water           | [LeetCode](https://leetcode.com/problems/trapping-rain-water/)       | Two Pointer, Stack, Prefix Sum |
+
+---
+
+## ✅ Day 34: DP – Word Segmentation & Circular Robbery
+
+| No. | Question            | Link                                                              | Topic                     |
+| --- | ------------------- | ----------------------------------------------------------------- | ------------------------- |
+| 98  | Word Break          | [LeetCode](https://leetcode.com/problems/word-break/)             | DP, Trie, Memoization     |
+| 99  | House Robber II     | [LeetCode](https://leetcode.com/problems/house-robber-ii/)        | DP, Circular Array, 1D DP |
+
+---
+
+## ✅ Day 35: Linked List – Fundamentals & Techniques
+
+| No. | Question                   | Link                                                                     | Topic                   |
+| --- | -------------------------- | ------------------------------------------------------------------------ | ------------------------ |
+| 100 | Linked List Cycle          | [LeetCode](https://leetcode.com/problems/linked-list-cycle/)             | Linked List, Two Pointer |
+| 101 | Remove Linked List Elements| [LeetCode](https://leetcode.com/problems/remove-linked-list-elements/)   | Linked List              |
+| 102 | Reverse Linked List        | [LeetCode](https://leetcode.com/problems/reverse-linked-list/)           | Linked List, Iteration   |
+| 103 | Palindrome Linked List     | [LeetCode](https://leetcode.com/problems/palindrome-linked-list/)        | Linked List, Two Pointer |
+
+---
+
+## ✅ Day 36: Linked List – Advanced Operations
+
+| No. | Question                        | Link                                                                           | Topic                     |
+| --- | ------------------------------- | ------------------------------------------------------------------------------ | -------------------------- |
+| 104 | Reverse Linked List II          | [LeetCode](https://leetcode.com/problems/reverse-linked-list-ii/)             | Linked List, Reversal      |
+| 105 | Remove Nth Node From End of List| [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)   | Linked List, Two Pointer   |
+| 106 | Odd Even Linked List            | [LeetCode](https://leetcode.com/problems/odd-even-linked-list/)               | Linked List                |
+| 107 | Copy List with Random Pointer   | [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/)      | Linked List, HashMap       |
+
+---
+
+## ✅ Day 37: Linked List – Pointer Manipulation & Variants
+
+| No. | Question                              | Link                                                                                 | Topic                      |
+| --- | ------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------- |
+| 108 | Flatten a Multilevel Doubly Linked List | [LeetCode](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)  | Linked List, DFS           |
+| 109 | Partition List                        | [LeetCode](https://leetcode.com/problems/partition-list/)                           | Linked List, Two Pointer   |
+| 110 | Swap Nodes in Pairs                   | [LeetCode](https://leetcode.com/problems/swap-nodes-in-pairs/)                      | Linked List, Recursion     |
+| 111 | Remove Duplicates from Sorted List II | [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)    | Linked List, Dummy Node    |
+
+---
+
+## ✅ Day 38: Linked List – Arithmetic & Intersection
+
+| No. | Question                                     | Link                                                                                   | Topic                       |
+| --- | -------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------- |
+| 112 | Add Two Numbers                              | [LeetCode](https://leetcode.com/problems/add-two-numbers/)                            | Linked List, Math           |
+| 113 | Convert Binary Number in a Linked List to Integer | [LeetCode](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | Linked List, Binary         |
+| 114 | Intersection of Two Linked Lists             | [LeetCode](https://leetcode.com/problems/intersection-of-two-linked-lists/)           | Linked List, Two Pointer    |
+| 115 | Add Two Numbers II                           | [LeetCode](https://leetcode.com/problems/add-two-numbers-ii/)                         | Linked List, Stack          |
+
+---
+
+## ✅ Day 39: Binary Tree – Traversal & Construction
+
+| No. | Question                                         | Link                                                                                   | Topic                     |
+| --- | ------------------------------------------------ | -------------------------------------------------------------------------------------- | -------------------------- |
+| 116 | Binary Tree Preorder Traversal                   | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/)             | Tree, DFS, Stack           |
+| 117 | Construct Binary Search Tree from Preorder Traversal | [LeetCode](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Tree, BST, Recursion       |
+
+---
+
+## ✅ Day 40: Binary Tree – Comparison & Symmetry
+
+| No. | Question              | Link                                                              | Topic              |
+| --- | ---------------------| ----------------------------------------------------------------- | ------------------ |
+| 118 | Same Tree            | [LeetCode](https://leetcode.com/problems/same-tree/)              | Tree, DFS, Recursion |
+| 119 | Symmetric Tree       | [LeetCode](https://leetcode.com/problems/symmetric-tree/)         | Tree, BFS, Recursion |
+
+---
+
+## ✅ Day 41: Binary Tree – Transformation & Path Sum
+
+| No. | Question              | Link                                                              | Topic                     |
+| --- | ---------------------| ----------------------------------------------------------------- | -------------------------- |
+| 120 | Path Sum              | [LeetCode](https://leetcode.com/problems/path-sum/)               | Tree, DFS                  |
+| 121 | Invert Binary Tree    | [LeetCode](https://leetcode.com/problems/invert-binary-tree/)     | Tree, BFS, Recursion       |
+
+---
+
+## ✅ Day 42: Binary Tree – Diameter & Depth
+
+| No. | Question                           | Link                                                                      | Topic               |
+| --- | ---------------------------------- | ------------------------------------------------------------------------- | ------------------- |
+| 122 | Diameter of Binary Tree            | [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/)       | Tree, DFS, Recursion |
+| 123 | Maximum Depth of Binary Tree       | [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/)  | Tree, DFS            |
+| 124 | Sum of Root To Leaf Binary Numbers | [LeetCode](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | Tree, DFS, Binary    |
+
+---
+
+## ✅ Day 43: Dynamic Programming – Coin Change Variants
+
+| No. | Question            | Link                                                              | Topic                  |
+| --- | ------------------- | ----------------------------------------------------------------- | ---------------------- |
+| 125 | Coin Change         | [LeetCode](https://leetcode.com/problems/coin-change/)            | DP, 1D DP, Greedy       |
+| 126 | Coin Change II      | [LeetCode](https://leetcode.com/problems/coin-change-ii/)         | DP, 2D DP, Combinations |
+
+---
+
+## ✅ Day 44: Graph – Foundations & Tree Validation
+
+| No. | Question                          | Link                                                                    | Topic                 |
+| --- | --------------------------------- | ----------------------------------------------------------------------- | --------------------- |
+| 127 | Find Center of Star Graph         | [LeetCode](https://leetcode.com/problems/find-center-of-star-graph/)   | Graph, Degree         |
+| 128 | Find if Path Exists in Graph      | [LeetCode](https://leetcode.com/problems/find-if-path-exists-in-graph/)| Graph, DFS, Union Find|
+| 129 | Validate Binary Tree Nodes        | [LeetCode](https://leetcode.com/problems/validate-binary-tree-nodes/)  | Graph, BFS, Tree Check|
+
+---
+
+## ✅ Day 45: Graph – DFS, Cloning & Connected Components
+
+| No. | Question              | Link                                                              | Topic                     |
+| --- | --------------------- | ----------------------------------------------------------------- | -------------------------- |
+| 130 | Clone Graph           | [LeetCode](https://leetcode.com/problems/clone-graph/)            | Graph, DFS, HashMap        |
+| 131 | Number of Provinces   | [LeetCode](https://leetcode.com/problems/number-of-provinces/)    | Graph, DFS, Union Find     |
+| 132 | Word Search           | [LeetCode](https://leetcode.com/problems/word-search/)            | DFS, Backtracking, Matrix  |
+
+---
+
+## ✅ Day 46: Tree & N-ary Tree – Depth & BST
+
+| No. | Question                               | Link                                                                          | Topic               |
+| --- | -------------------------------------- | ----------------------------------------------------------------------------- | ------------------- |
+| 133 | Maximum Depth of N-ary Tree            | [LeetCode](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)       | Tree, DFS            |
+| 134 | Minimum Absolute Difference in BST     | [LeetCode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)| BST, Inorder         |
+
+---
+
+## ✅ Day 47: Tree – Perimeter, Leaves & Grids
+
+| No. | Question              | Link                                                              | Topic                  |
+| --- | ---------------------| ----------------------------------------------------------------- | ---------------------- |
+| 135 | Island Perimeter     | [LeetCode](https://leetcode.com/problems/island-perimeter/)       | Grid, DFS               |
+| 136 | Sum of Left Leaves   | [LeetCode](https://leetcode.com/problems/sum-of-left-leaves/)     | Tree, DFS, Recursion    |
+
+---
+
+## ✅ Day 48: Graph – Topological Sort & Island Count
+
+| No. | Question                   | Link                                                                   | Topic                       |
+| --- | -------------------------- | ---------------------------------------------------------------------- | --------------------------- |
+| 137 | Course Schedule II         | [LeetCode](https://leetcode.com/problems/course-schedule-ii/)         | Graph, Topological Sort      |
+| 138 | Course Schedule            | [LeetCode](https://leetcode.com/problems/course-schedule/)            | Graph, Cycle Detection       |
+| 139 | Number of Islands          | [LeetCode](https://leetcode.com/problems/number-of-islands/)          | Grid, DFS, Union Find        |
+
+---
+
+## ✅ Day 49: Tree Traversal & Bit Manipulation
+
+| No. | Question                    | Link                                                                  | Topic                    |
+| --- | --------------------------- | --------------------------------------------------------------------- | ------------------------ |
+| 141 | Binary Tree Inorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Tree, DFS, Stack         |
+| 166 | Counting Bits              | [LeetCode](https://leetcode.com/problems/counting-bits/)              | Bit Manipulation, DP     |
+
+---
+
+## ✅ Day 50: Graph – BFS & Tree Height
+
+| No. | Question                  | Link                                                                  | Topic                         |
+| --- | ------------------------- | --------------------------------------------------------------------- | ----------------------------- |
+| 142 | Rotting Oranges          | [LeetCode](https://leetcode.com/problems/rotting-oranges/)            | Matrix, BFS                   |
+| 143 | Minimum Height Trees     | [LeetCode](https://leetcode.com/problems/minimum-height-trees/)       | Tree, Graph, Topological Sort |
+
+---
+
+## ✅ Day 51: N-ary Tree & Stack Patterns
+
+| No. | Question                        | Link                                                                          | Topic               |
+| --- | ------------------------------- | ----------------------------------------------------------------------------- | ------------------- |
+| 144 | N-ary Tree Preorder Traversal   | [LeetCode](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)     | Tree, DFS, Iteration |
+| 145 | Next Greater Element II         | [LeetCode](https://leetcode.com/problems/next-greater-element-ii/)           | Stack, Array, Monotonic|
+
+---
+
+## ✅ Day 52: Advanced DFS – Equalizing Leaves & Enclaves
+
+| No. | Question                                      | Link                                                                                 | Topic            |
+| --- | --------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------- |
+| 146 | Minimum Increments to Equalize Leaf Paths     | [LeetCode](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/) | Tree, DFS        |
+| 147 | Number of Enclaves                            | [LeetCode](https://leetcode.com/problems/number-of-enclaves/)                        | Matrix, DFS, BFS |
+
+---
+
