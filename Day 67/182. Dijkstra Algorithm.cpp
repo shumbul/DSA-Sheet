@@ -40,3 +40,36 @@ class Solution {
         return dist;
     }
 };
+
+class Solution {
+  public:
+    vector<int> dijkstra(int V, vector<vector<int>> &edges, int src) {
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> nodes; //min heap ensures that we always process the node with the shortest known distance next.
+        vector<int> dist(V, INT_MAX);
+        vector<vector<pair<int, int>>> adj(V); // (neighbor, weight)
+        // Build adjacency list
+        for (auto edge : edges) {
+            int u = edge[0], v = edge[1], wt = edge[2];
+            adj[u].push_back({v, wt});
+        }
+        dist[src] = 0;
+        nodes.push({0, src});
+        while (!nodes.empty()) {
+            int currDist = nodes.top().first;
+            int u = nodes.top().second;
+            nodes.pop();
+            if (currDist > dist[u])
+                continue;
+            for (auto nbr : adj[u]) {
+                int v = nbr.first;
+                int wt = nbr.second;
+                if (dist[v] > dist[u] + wt) {
+                  //If the path from source  u → v is shorter than the currently known path to v
+                    dist[v] = dist[u] + wt;
+                    nodes.push({dist[v], v});
+                }
+            }
+        }
+        return dist;
+    }
+};
