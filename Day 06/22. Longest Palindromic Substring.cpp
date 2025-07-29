@@ -1,3 +1,4 @@
+//recursion
 class Solution 
 {
 public:
@@ -23,7 +24,6 @@ public:
     string helper(int left, int right, string s)
     {
             while ((left>=0 && right<s.size()) && s[left]==s[right])
-            //
             {
                 left--;
                 right++;
@@ -36,3 +36,45 @@ public:
         
     }
 };
+
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        set<string> substr;
+        string ans = "";
+        for (int i = 0; i <= s.size() - 1; i++) {
+            string st = "";
+            st += s[i];
+            substr.insert(st);
+            for (int j = i + 1; j < s.size(); j++) {
+                st += s[j];
+                substr.insert(st);
+            }
+        }
+        for (auto str : substr) {
+            bool flag = true;
+            int left = 0;
+            int right = str.size() - 1;
+            while (left <= right) {
+                if (str[left] != str[right]) {
+                    flag = false;
+                    break;
+                } 
+                else {
+                    left++;
+                    right--;
+                }
+            }
+            if (flag) {
+                if (ans.size() < str.size())
+                    ans = str;
+            }
+        }
+        return ans;
+    }
+};
+/*Generating all substrings is O(n²)
+Inserting into a set is O(log n)
+Checking each substring is O(n)
+TC: O(n³ log n)*/
+
