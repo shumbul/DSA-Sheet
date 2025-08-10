@@ -13,18 +13,18 @@ public:
                 if (target-num1==nums[j])
                 {
                     //1. push first num only if difference exists
-                    //pairs.push_back(i);
-                    //pairs.push_back(j);
+                    pairs.push_back(i);
+                    pairs.push_back(j);
                     //2. directly return pairs
                     return {i,j};
                 }
             }
         }
         return {};
-        //TC n^2
-        //SC 1
     }
 };
+//TC O(N^2)
+//SC O(1)
 
 class Solution {
 public:
