@@ -45,22 +45,6 @@ public:
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int, int> mp; // key = elements previously seen, value = index
-        for(int i=0;i<nums.size();i++){
-            if(mp.count(target-nums[i])>0){
-            // if(mp.find(target-nums[i]) != mp.end()){
-                return {mp[target-nums[i]], i};
-            }
-            mp[nums[i]]=i;
-        }
-        return {};
-        // TC: O(nlogn), SC: O(n)
-    }
-};
-
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> mp; // key = elements previously seen, value = index
         for(int i=0;i<nums.size();i++){
             if(mp.count(target-nums[i])>0){
@@ -79,7 +63,7 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         int n = nums.size();
         vector<pair<int, int>> arr;
-        for (int i = 0; i < n; ++i)
+        for (int i = 0; i < n; i++)
             arr.push_back({nums[i], i});
         //Sort the array by value
         sort(arr.begin(), arr.end());
