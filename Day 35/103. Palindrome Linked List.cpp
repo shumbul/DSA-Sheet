@@ -1,16 +1,15 @@
 class Solution {
     ListNode* temp;
     bool ans = true;
-
 public:
     bool isPalindrome(ListNode* head) {
         temp = head;
         helper(head);
         return ans;
     }
-
     void helper(ListNode* node) {
-        if (node == nullptr) return;
+        if (node == nullptr) 
+            return;
         helper(node->next);  // reach the end first
         if (temp->val != node->val) {
             ans = false;
