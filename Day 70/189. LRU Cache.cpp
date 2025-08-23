@@ -3,7 +3,6 @@ class LRUCache {
     list<int> lru; // Maintains keys in order of usage: front = most recently used
     unordered_map<int, int> valueMap; // Maps key to its value
     unordered_map<int, list<int>::iterator> posMap; // Maps key to its position in the list
-
 public:
     LRUCache(int capacity) {
         cap = capacity;
@@ -36,3 +35,40 @@ public:
         posMap[key] = lru.begin();
     }
 };
+
+class LRUCache {
+    int cap;  
+    vector<int> cache;  // stores keys in order (front = most recent, back = least recent)
+    unordered_map<int, int> valueMap; // maps key -> value
+public:
+    // Constructor: initialize with given capacity
+    LRUCache(int capacity) {
+        cap = capacity;
+    }
+    // Get value for a key
+    int get(int key) {
+        // Step 1: If key not in cache, return -1
+        if (valueMap.find(key) == valueMap.end())
+            return -1;
+        cache.erase(find(cache.begin(), cache.end(), key)); // Step 2: Key is present → make it "most recently used".  Erase it from wherever it is in the cache vector
+        cache.insert(cache.begin(), key); // Step 3: Insert it at the front (mark as most recent)
+        return valueMap[key]; // Step 4: Return the value
+    }
+    // Put a key-value pair in the cache
+    void put(int key, int value) {
+        // Step 1: If key already exists
+        if (valueMap.find(key) != valueMap.end()) {
+            cache.erase(find(cache.begin(), cache.end(), key)); // Remove it from cache list (old position)
+        }
+        // Step 2: If cache is full → remove least recently used (last element)
+        else if ((int)cache.size() == cap) {
+            int lruKey = cache.back(); // LRU is last element
+            cache.pop_back();          // remove it from cache
+            valueMap.erase(lruKey);    // also remove its value
+        }
+        cache.insert(cache.begin(), key);  // Step 3: Insert the new key at the front (most recent)
+        valueMap[key] = value;  // Step 4: Update value map
+    }
+};
+//TC O(N)
+//SC O(1)
