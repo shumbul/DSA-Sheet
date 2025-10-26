@@ -20,3 +20,11 @@
 | Day 30 | 🎮 Game Theory with Dynamic Programming                                                           | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2030/Readme.md) |
 | Day 62 | 🔄 Breadth-First Search (BFS) in C++ – Complete Guide                                             | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2062/Readme.md) |
 | Day 64 | ✅ DFS Simplified in C++                                                                          | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2064/Readme.md) |
+| Day 35 | 🔗 Linked List Fundamentals & Advanced Techniques                                                 | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2035/Readme.md) |
+| Day 43 | 💰 Advanced Dynamic Programming - Coin Change & Beyond                                            | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2043/Readme.md) |
+| Day 67 | 🛣️ Shortest Path Algorithms - Complete Guide                                                      | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2067/Readme.md) |
+| Day 71 | 🌳 Trie (Prefix Tree) - Complete Implementation Guide                                             | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2071/Readme.md) |
+| Day 10 | 🎯 Binary Search on Answer - Advanced Pattern                                                     | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2010/Readme.md) |
+| Day 61 | 🔢 Bit Manipulation Mastery                                                                       | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2061/Readme.md) |
+| Day 48 | 🔗 Graph Theory - Topological Sort & Connected Components                                         | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2048/Readme.md) |
+| Day 58 | 🔺 Heap & Priority Queue Mastery                                                                  | [Readme](https://github.com/shumbul/DSA-Sheet/blob/main/Day%2058/Readme.md) |
