@@ -211,6 +211,7 @@
 
 | No. | Question        | Link                                                       | Topic         |
 | --- | --------------- | ---------------------------------------------------------- | ------------- |
+| 67 | Missing Number  | [LeetCode](https://leetcode.com/problems/missing-number/) | Array, Math   |
 | 68  | Remove K Digits | [LeetCode](https://leetcode.com/problems/remove-k-digits/) | Greedy, Stack |
 
 ---
@@ -506,6 +507,242 @@
 | --- | --------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------- |
 | 146 | Minimum Increments to Equalize Leaf Paths     | [LeetCode](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/) | Tree, DFS        |
 | 147 | Number of Enclaves                            | [LeetCode](https://leetcode.com/problems/number-of-enclaves/)                        | Matrix, DFS, BFS |
+
+---
+
+## ✅ Day 53: Islands & String Manipulation
+
+| No. | Question           | Link                                                                | Topic                |
+| --- | ------------------ | ------------------------------------------------------------------- | -------------------- |
+| 148 | Max Area of Island | [LeetCode](https://leetcode.com/problems/max-area-of-island/)       | Matrix, DFS          |
+| 149 | Find the Difference| [LeetCode](https://leetcode.com/problems/find-the-difference/)      | String, Hash         |
+
+---
+
+## ✅ Day 54: BST Validation & N-ary Trees
+
+| No. | Question                       | Link                                                                           | Topic             |
+| --- | ------------------------------ | ------------------------------------------------------------------------------ | ----------------- |
+| 150 | Validate Binary Search Tree    | [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/)        | BST, DFS          |
+| 151 | N-ary Tree Postorder Traversal | [LeetCode](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)     | Tree, DFS         |
+
+---
+
+## ✅ Day 55: Tree Paths & Traversals
+
+| No. | Question                      | Link                                                                         | Topic             |
+| --- | ----------------------------- | ---------------------------------------------------------------------------- | ----------------- |
+| 152 | Binary Tree Paths             | [LeetCode](https://leetcode.com/problems/binary-tree-paths/)                 | Tree, DFS         |
+| 153 | Binary Tree Postorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/)   | Tree, DFS, Stack  |
+
+---
+
+## ✅ Day 56: Tree Depth & Number Systems
+
+| No. | Question                        | Link                                                                           | Topic                |
+| --- | ------------------------------- | ------------------------------------------------------------------------------ | -------------------- |
+| 154 | Minimum Depth of Binary Tree    | [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/)       | Tree, BFS, DFS       |
+| 155 | Convert a Number to Hexadecimal | [LeetCode](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)    | Math, Bit Manipulation |
+
+---
+
+## ✅ Day 57: Tree Balance & Probability
+
+| No. | Question                      | Link                                                                        | Topic                |
+| --- | ----------------------------- | --------------------------------------------------------------------------- | -------------------- |
+| 156 | Balanced Binary Tree          | [LeetCode](https://leetcode.com/problems/balanced-binary-tree/)             | Tree, DFS            |
+| 157 | Knight Probability in Chessboard | [LeetCode](https://leetcode.com/problems/knight-probability-in-chessboard/) | DP, Math, Probability |
+
+---
+
+## ✅ Day 58: Number Theory & Heap Operations
+
+| No. | Question           | Link                                                               | Topic           |
+| --- | ------------------ | ------------------------------------------------------------------ | --------------- |
+| 158 | Ugly Number II     | [LeetCode](https://leetcode.com/problems/ugly-number-ii/)          | DP, Heap, Math  |
+| 159 | Last Stone Weight | [LeetCode](https://leetcode.com/problems/last-stone-weight/)       | Heap, Priority Queue |
+
+---
+
+## ✅ Day 59: Streams & Rankings
+
+| No. | Question                          | Link                                                                            | Topic               |
+| --- | --------------------------------- | ------------------------------------------------------------------------------- | ------------------- |
+| 160 | Kth Largest Element in a Stream   | [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/)      | Heap, Design        |
+| 161 | Relative Ranks                    | [LeetCode](https://leetcode.com/problems/relative-ranks/)                       | Array, Sorting      |
+
+---
+
+## ✅ Day 60: Array Products & Frequency Analysis
+
+| No. | Question                                        | Link                                                                                          | Topic              |
+| --- | ----------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------ |
+| 162 | Maximum Product of Two Elements in an Array     | [LeetCode](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)       | Array, Heap        |
+| 163 | Top K Frequent Elements                         | [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/)                           | Hash, Heap, Sorting |
+
+---
+
+## ✅ Day 61: Bit Manipulation Fundamentals
+
+| No. | Question          | Link                                                              | Topic               |
+| --- | ----------------- | ----------------------------------------------------------------- | ------------------- |
+| 164 | Number Complement | [LeetCode](https://leetcode.com/problems/number-complement/)      | Bit Manipulation    |
+| 165 | Hamming Distance  | [LeetCode](https://leetcode.com/problems/hamming-distance/)       | Bit Manipulation    |
+| 169 | Reverse Bits      | [LeetCode](https://leetcode.com/problems/reverse-bits/)           | Bit Manipulation    |
+
+---
+
+## ✅ Day 62: Graph Fundamentals & BFS
+
+| No. | Question                    | Link                                                                      | Topic                |
+| --- | --------------------------- | ------------------------------------------------------------------------- | -------------------- |
+| 170 | Sum of Dependencies in a Graph | [GFG](https://www.geeksforgeeks.org/problems/sum-of-dependencies-in-a-graph/1) | Graph               |
+| 171 | Print Adjacency List       | [GFG](https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1) | Graph, Adjacency List |
+| 172 | Shortest Path from 1 to n  | [GFG](https://www.geeksforgeeks.org/problems/shortest-path-from-1-to-n/1) | Graph, BFS          |
+
+---
+
+## ✅ Day 63: BFS Patterns & Cycle Detection
+
+| No. | Question                  | Link                                                                    | Topic                |
+| --- | ------------------------- | ----------------------------------------------------------------------- | -------------------- |
+| 173 | BFS of Graph              | [GFG](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1) | Graph, BFS           |
+| 174 | Maximum Weight Node       | [GFG](https://www.geeksforgeeks.org/problems/maximum-weight-node/1)     | Graph, Weighted      |
+| 175 | Undirected Graph Cycle    | [GFG](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1) | Graph, Cycle Detection |
+
+---
+
+## ✅ Day 64: DFS & Advanced Graph Algorithms
+
+| No. | Question                             | Link                                                                           | Topic                |
+| --- | ------------------------------------ | ------------------------------------------------------------------------------ | -------------------- |
+| 176 | Minimum Multiplications to reach End | [GFG](https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1) | Graph, BFS           |
+| 177 | DFS of Graph                         | [GFG](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1) | Graph, DFS           |
+
+---
+
+## ✅ Day 65: Tree Views & Distribution
+
+| No. | Question                        | Link                                                                          | Topic               |
+| --- | ------------------------------- | ----------------------------------------------------------------------------- | ------------------- |
+| 178 | Binary Tree Right Side View    | [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/)       | Tree, BFS, DFS      |
+| 179 | Distribute Coins in Binary Tree | [LeetCode](https://leetcode.com/problems/distribute-coins-in-binary-tree/)   | Tree, DFS           |
+
+---
+
+## ✅ Day 66: Cycle Detection & Topological Sort
+
+| No. | Question                              | Link                                                                            | Topic                   |
+| --- | ------------------------------------- | ------------------------------------------------------------------------------- | ----------------------- |
+| 180 | Detect Cycle in an Undirected Graph  | [GFG](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1) | Graph, Cycle Detection  |
+| 181 | Alien Dictionary                      | [LeetCode](https://leetcode.com/problems/alien-dictionary/)                     | Graph, Topological Sort |
+
+---
+
+## ✅ Day 67: Shortest Path Algorithms
+
+| No. | Question                 | Link                                                                     | Topic                    |
+| --- | ------------------------ | ------------------------------------------------------------------------ | ------------------------ |
+| 182 | Dijkstra Algorithm       | [GFG](https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1) | Graph, Shortest Path     |
+| 183 | Bellman Ford Algorithm   | [GFG](https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1) | Graph, Shortest Path     |
+
+---
+
+## ✅ Day 68: All-Pairs Shortest Path & Tree Construction
+
+| No. | Question                 | Link                                                                     | Topic                    |
+| --- | ------------------------ | ------------------------------------------------------------------------ | ------------------------ |
+| 184 | Floyd Warshall Algorithm | [GFG](https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1) | Graph, All-Pairs Shortest Path |
+| 185 | Maximum Binary Tree II   | [LeetCode](https://leetcode.com/problems/maximum-binary-tree-ii/)        | Tree, Recursion          |
+
+---
+
+## ✅ Day 69: Tree Construction & MST
+
+| No. | Question               | Link                                                                   | Topic                |
+| --- | ---------------------- | ---------------------------------------------------------------------- | -------------------- |
+| 186 | Maximum Binary Tree    | [LeetCode](https://leetcode.com/problems/maximum-binary-tree/)         | Tree, Recursion      |
+| 187 | Minimum Spanning Tree  | [GFG](https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1)  | Graph, MST           |
+
+---
+
+## ✅ Day 70: BST Operations & Cache Design
+
+| No. | Question                   | Link                                                                     | Topic                |
+| --- | -------------------------- | ------------------------------------------------------------------------ | -------------------- |
+| 188 | Trim a Binary Search Tree  | [LeetCode](https://leetcode.com/problems/trim-a-binary-search-tree/)    | BST, Recursion       |
+| 189 | LRU Cache                  | [LeetCode](https://leetcode.com/problems/lru-cache/)                     | Design, Hash, Linked List |
+
+---
+
+## ✅ Day 71: Trie Data Structure
+
+| No. | Question                    | Link                                                                      | Topic              |
+| --- | --------------------------- | ------------------------------------------------------------------------- | ------------------ |
+| 190 | Implement Trie (Prefix Tree) | [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/)     | Trie, Design       |
+| 191 | Longest Word in Dictionary  | [LeetCode](https://leetcode.com/problems/longest-word-in-dictionary/)     | Trie, DFS          |
+
+---
+
+## ✅ Day 72: Trie Applications & Strongly Connected Components
+
+| No. | Question                  | Link                                                                    | Topic                        |
+| --- | ------------------------- | ----------------------------------------------------------------------- | ---------------------------- |
+| 192 | Search Suggestions System | [LeetCode](https://leetcode.com/problems/search-suggestions-system/)   | Trie, Binary Search          |
+| 193 | Kosaraju Algorithm        | [GFG](https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1) | Graph, SCC |
+
+---
+
+## ✅ Day 73: Math & Greedy Optimization
+
+| No. | Question            | Link                                                              | Topic              |
+| --- | ------------------- | ----------------------------------------------------------------- | ------------------ |
+| 194 | Sqrt(x)             | [LeetCode](https://leetcode.com/problems/sqrtx/)                  | Math, Binary Search |
+| 195 | Rearranging Fruits  | [LeetCode](https://leetcode.com/problems/rearranging-fruits/)     | Greedy, Math       |
+
+---
+
+## ✅ Day 74: Sliding Window & Fruit Collection
+
+| No. | Question                                        | Link                                                                                          | Topic                |
+| --- | ----------------------------------------------- | --------------------------------------------------------------------------------------------- | -------------------- |
+| 196 | Maximum Fruits Harvested After at Most K Steps | [LeetCode](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/)    | Sliding Window, Greedy |
+| 197 | Fruit Into Baskets                              | [LeetCode](https://leetcode.com/problems/fruit-into-baskets/)                                 | Sliding Window       |
+
+---
+
+## ✅ Day 75: Advanced Fruit Collection Patterns
+
+| No. | Question             | Link                                                                | Topic              |
+| --- | -------------------- | ------------------------------------------------------------------- | ------------------ |
+| 198 | Fruits into Baskets II | Custom Problem Extension                                          | Sliding Window     |
+| 199 | Fruits into Baskets III| Custom Problem Extension                                          | Sliding Window     |
+
+---
+
+## ✅ Day 76: Dynamic Programming & Probability
+
+| No. | Question                                  | Link                                                                                    | Topic                |
+| --- | ----------------------------------------- | --------------------------------------------------------------------------------------- | -------------------- |
+| 200 | Find the Maximum Number of Fruits Collected | Custom Problem                                                                       | DP, Optimization     |
+| 201 | Soup Servings                             | [LeetCode](https://leetcode.com/problems/soup-servings/)                               | DP, Probability      |
+
+---
+
+## ✅ Day 77: Number Theory & Powers
+
+| No. | Question                           | Link                                                                             | Topic                    |
+| --- | ---------------------------------- | -------------------------------------------------------------------------------- | ------------------------ |
+| 202 | Reordered Power of 2               | [LeetCode](https://leetcode.com/problems/reordered-power-of-2/)                  | Math, Sorting            |
+| 203 | Range Product Queries of Powers    | [LeetCode](https://leetcode.com/problems/range-product-queries-of-powers/)       | Math, Bit Manipulation   |
+
+---
+
+## ✅ Day 78: String Pattern Matching
+
+| No. | Question                              | Link                                                                                | Topic              |
+| --- | ------------------------------------- | ----------------------------------------------------------------------------------- | ------------------ |
+| 204 | Largest 3-Same-Digit Number in String | [LeetCode](https://leetcode.com/problems/largest-3-same-digit-number-in-string/)   | String, Iteration  |
 
 ---
 
